@@ -1,0 +1,86 @@
+{
+  "users": [
+    {
+      "email": "admin@wearrarin.com",
+      "senha": "1234"
+    }
+  ],
+  "produtos": [
+    {
+      "nome": "Drop Lock",
+      "categorias": [
+        "oversized",
+        "camiseta"
+      ],
+      "descricao": "Camiseta oversized preta com estampa de dado nas costas. Estilo urbano e confortável.",
+      "imagens": [
+        "assets/DropDadoCostasPreta.png"
+      ],
+      "id": "p001",
+      "preco": 119.9,
+      "tamanho": [
+        "P",
+        "M",
+        "G",
+        "GG"
+      ]
+    },
+    {
+      "nome": "Mask Off Black",
+      "categorias": [
+        "oversized",
+        "camiseta"
+      ],
+      "descricao": "Camiseta oversized preta com estampa frontal ‘Mask Off’. Design moderno e tecido premium.",
+      "imagens": [
+        "assets/DropMaskFrente.png"
+      ],
+      "id": "p002",
+      "preco": 129.9,
+      "tamanho": [
+        "P",
+        "M",
+        "G",
+        "GG"
+      ]
+    },
+    {
+      "nome": "Skull Drop White",
+      "categorias": [
+        "oversized",
+        "camiseta"
+      ],
+      "descricao": "Camiseta oversized branca com estampa de caveira estilizada. Ideal para compor visuais casuais.",
+      "imagens": [
+        "assets/DropCaveira2.png"
+      ],
+      "id": "p003",
+      "preco": 109.9,
+      "tamanho": [
+        "P",
+        "M",
+        "G",
+        "GG"
+      ]
+    },
+    {
+      "nome": "Drop Lock White",
+      "categorias": [
+        "oversized",
+        "camiseta"
+      ],
+      "descricao": "Camiseta oversized branca com estampa de dado frontal. Conforto e estilo streetwear.",
+      "imagens": [
+        "assets/DropDadoFrente.png"
+      ],
+      "id": "p004",
+      "preco": 119.9,
+      "tamanho": [
+        "P",
+        "M",
+        "G",
+        "GG"
+      ]
+    }
+  ]
+}
