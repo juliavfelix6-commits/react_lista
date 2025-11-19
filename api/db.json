@@ -14,7 +14,7 @@
       ],
       "descricao": "Camiseta oversized preta com estampa de dado nas costas. Estilo urbano e confortável.",
       "imagens": [
-        "assets/DropDadoCostasPreta.png"
+        "DropDadoCostasPreta.png"
       ],
       "id": "p001",
       "preco": 119.9,
@@ -33,7 +33,7 @@
       ],
       "descricao": "Camiseta oversized preta com estampa frontal ‘Mask Off’. Design moderno e tecido premium.",
       "imagens": [
-        "assets/DropMaskFrente.png"
+        "DropMaskFrente.png"
       ],
       "id": "p002",
       "preco": 129.9,
@@ -52,7 +52,7 @@
       ],
       "descricao": "Camiseta oversized branca com estampa de caveira estilizada. Ideal para compor visuais casuais.",
       "imagens": [
-        "assets/DropCaveira2.png"
+        "DropCaveira1.png"
       ],
       "id": "p003",
       "preco": 109.9,
@@ -71,7 +71,7 @@
       ],
       "descricao": "Camiseta oversized branca com estampa de dado frontal. Conforto e estilo streetwear.",
       "imagens": [
-        "assets/DropDadoFrente.png"
+        "DropDadoFrente.png"
       ],
       "id": "p004",
       "preco": 119.9,

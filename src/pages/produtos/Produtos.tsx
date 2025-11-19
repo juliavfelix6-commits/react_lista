@@ -1,19 +1,15 @@
 import banner_1 from '../../assets/banner.png';
 import banner_2 from '../../assets/banner.png';
 import banner_3 from '../../assets/banner.png';
-import camisa_1 from '../../assets/DropDadoCostasPreta.png';
-import camisa_2 from '../../assets/DropMaskFrente.png';
-import camisa_3 from '../../assets/DropCaveira1.png';
-import camisa_4 from '../../assets/DropDadoFrente.png';
 import './Produtos.css';
 import { useEffect, useState } from 'react';
 import { getRoupas } from '../../Services/roupasServices';
 import type { Roupas } from '../../types/Roupas';
 
 
-export default function Produtos(){
+export default function Produtos() {
 
-    const [ roupas, setRoupas] = useState<Roupas[]>([]);
+  const [roupas, setRoupas] = useState<Roupas[]>([]);
 
   const fetchRoupas = async () => {
     try {
@@ -29,9 +25,9 @@ export default function Produtos(){
     fetchRoupas();
   }, [])
 
-    return (
-<main>
-<div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
+  return (
+    <main>
+      <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img src={banner_1} className="d-block w-100" alt="..." />
@@ -55,48 +51,24 @@ export default function Produtos(){
         </button>
       </div>
 
-     <section className="cards">
+      <section className="cards">
 
-                <div className="card_produtos">
+        <div className="card_produtos">
 
-                    <img src={camisa_1} alt="" />
+     
+        </div>
 
-                    <h2>drop lock</h2>
-
-                </div>
-
-                <div className="card_produtos">
-
-                    <img src={camisa_2} alt="" />
-
-                    <h2>mask off
-                        black
-                    </h2>
-
-                </div>
-
-                <div className="card_produtos">
-
-                    <img src={camisa_3} alt="" />
-
-                    <h2>skull drop
-                        white
-                    </h2>
-
-                </div>
-
-                <div className="card_produtos">
-
-                    <img src={camisa_4} alt="" />
-
-                    <h2>drop lock
-                        white
-                    </h2>
-
-                </div>
-
-            </section>
-
-</main>
-    )
+      </section>
+      {
+        roupas.map((r: Roupas) => (
+          <div className='card_produtos'>
+            <img src= {`http://localhost:3000/static/${r.imagens[0]}`} alt={"Imagem do produtos: " + r.descrição} />
+            <h2>{r.nome}</h2>
+            <p>{r.descrição}</p>
+            <span>{r.preco}</span>
+          </div>
+        ))
+      }
+    </main>
+  )
 }
