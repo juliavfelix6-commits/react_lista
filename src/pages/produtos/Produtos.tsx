@@ -53,12 +53,9 @@ export default function Produtos() {
 
       <section className="cards">
 
-        <div className="card_produtos">
+       
 
      
-        </div>
-
-      </section>
       {
         roupas.map((r: Roupas) => (
           <div className='card_produtos'>
@@ -69,6 +66,7 @@ export default function Produtos() {
           </div>
         ))
       }
+       </section>
     </main>
   )
 }
